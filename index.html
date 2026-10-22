@@ -3,285 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Corps for Progress — Apprenez l'anglais en ligne</title>
-<meta name="description" content="Corps for Progress : plateforme de cours d'anglais en ligne. Apprenez l'anglais, élargissez vos horizons.">
+<title>Corps for Progress — Website under construction</title>
+<meta name="description" content="Corps for Progress : notre site est en construction.">
 <link rel="icon" href="assets/cp-logo.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1f44;
+    --bg: #f5f8fc;
+    --grad: linear-gradient(90deg, #1d63c4, #1fa9e6);
+    --display: "Bricolage Grotesque", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--navy);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .logo { width: min(280px, 60vw); height: auto; display: block; }
+  .contact {
+    margin-top: 24px; font-family: var(--display); font-weight: 700; font-size: 18px;
+    color: #1d63c4; text-underline-offset: 3px;
+  }
+  .contact:hover { color: #12427f; }
+  .ticker {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--grad); color: #fff;
+    overflow: hidden; white-space: nowrap; padding: 14px 0;
+  }
+  .ticker__track { display: inline-flex; animation: scroll 25s linear infinite; }
+  .ticker__track span {
+    font-family: var(--display); font-weight: 700; letter-spacing: .04em;
+    font-size: clamp(16px, 2.2vw, 22px); text-transform: uppercase; padding: 0 2.5em;
+  }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker__track { animation: none; }
+  }
+</style>
 </head>
 <body>
-<div class="page">
 
-<header class="header">
-  <div class="header__bar">
-    <a href="index.html" class="header__logo" aria-label="Corps for Progress — Accueil"><img src="assets/cp-logo.jpeg" alt="Logo Corps for Progress"></a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="index.html" class="is-active" aria-current="page">Accueil</a>
-      <a href="a-propos.html">À propos de nous</a>
-      <a href="index.html#cours">Nos cours</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="header__actions">
-      <button type="button" class="btn btn--ghost" data-soon="La connexion sera disponible prochainement.">Se connecter</button>
-      <a href="#cours" class="btn btn--primary">Découvrir nos cours<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-    </div>
-    <button type="button" class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>
-      <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-    </button>
+<img class="logo" src="assets/cp-logo.jpeg" alt="Corps for Progress">
+<a class="contact" href="contact.html">Contact</a>
+
+<div class="ticker" role="status" aria-label="Website under construction">
+  <div class="ticker__track" aria-hidden="true">
+    <span>Website under construction</span><span>Website under construction</span><span>Website under construction</span><span>Website under construction</span>
+    <span>Website under construction</span><span>Website under construction</span><span>Website under construction</span><span>Website under construction</span>
   </div>
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html" class="is-active" aria-current="page">Accueil</a>
-    <a href="a-propos.html">À propos de nous</a>
-    <a href="index.html#cours">Nos cours</a>
-    <a href="#contact">Contact</a>
-    <div class="mobile-menu__actions">
-      <button type="button" class="btn btn--soft" data-soon="La connexion sera disponible prochainement.">Se connecter</button>
-      <a href="#cours" class="btn btn--primary btn--flat">Nos cours →</a>
-    </div>
-  </div>
-</header>
-
-<main>
-
-<!-- Héro -->
-<section class="hero">
-  <div class="blob" style="top:-180px;right:-160px;width:620px;height:620px;background:radial-gradient(circle,rgba(31,169,230,.28),rgba(31,169,230,0) 70%)"></div>
-  <div class="blob" style="bottom:-220px;left:-200px;width:560px;height:560px;background:radial-gradient(circle,rgba(29,99,196,.16),rgba(29,99,196,0) 70%)"></div>
-  <div class="hero__grid">
-    <div class="hero__text">
-      <div class="pill-new"><b>Nouveau</b>Plateforme de cours d'anglais en ligne</div>
-      <h1 class="h1">Apprenez l'anglais. <span class="gradient-text">Élargissez vos horizons.</span></h1>
-      <p class="lead">Découvrez une nouvelle façon d'apprendre l'anglais, de développer vos compétences et de préparer vos prochaines opportunités.</p>
-      <div class="btn-row">
-        <a href="#cours" class="btn btn--lg btn--primary">Découvrir nos cours<span class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
-        <a href="a-propos.html" class="btn btn--lg btn--white">Qui sommes-nous ?</a>
-      </div>
-    </div>
-    <div class="hero__visual">
-      <div class="hero__back"></div>
-      <div class="hero__photo media">
-        <div class="img-slot"><span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>Photo : apprenant·e en situation d'étude</span></div>
-      </div>
-      <div class="float-progress" aria-hidden="true">
-        <div class="float-progress__top">
-          <span class="float-progress__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
-          <div><small>Suivi de progression</small><strong>Votre parcours</strong></div>
-        </div>
-        <div class="bar"><i></i></div>
-      </div>
-      <div class="float-online" aria-hidden="true">100 % en ligne</div>
-    </div>
-  </div>
-</section>
-
-<!-- Présentation CP -->
-<section class="section">
-  <div class="panel panel--intro">
-    <div class="panel__logo"><img src="assets/cp-logo.jpeg" alt="Corps for Progress"></div>
-    <div class="col">
-      <div class="row-wrap">
-        <span class="eyebrow">Qui nous sommes</span>
-        <span class="marker">Texte provisoire</span>
-      </div>
-      <h2 class="h2 h2--sm">Une organisation tournée vers le progrès par l'apprentissage.</h2>
-      <p class="text-17">Corps for Progress propose une plateforme de formation en anglais pensée pour accompagner chaque apprenant dans sa progression. Cette introduction sera complétée par la présentation officielle de l'organisation.</p>
-      <a href="a-propos.html" class="btn btn--soft self-start">En savoir plus sur nous<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- Formations -->
-<section id="cours" class="section">
-  <div class="container stack">
-    <div class="head-row" style="gap:20px">
-      <div class="head" style="max-width:640px">
-        <span class="eyebrow">Nos formations</span>
-        <h2 class="h2">Des cours d'anglais, à portée de clic.</h2>
-      </div>
-      <button type="button" class="btn btn--dark" data-soon="Le catalogue complet sera disponible prochainement.">Voir tout le catalogue<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
-    </div>
-    <div class="grid courses">
-      <article class="course">
-        <div class="course__media media">
-          <div class="img-slot"><span>Visuel du cours</span></div>
-          <span class="course__level">Niveau · à préciser</span>
-        </div>
-        <div class="course__body">
-          <h3>Titre du cours à renseigner</h3>
-          <p>Résumé court du cours : objectifs et contenu principal.</p>
-          <div><span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Durée : à préciser</span></div>
-          <div class="course__foot">
-            <div class="course__price"><small>Prix</small><strong>— €</strong></div>
-            <button type="button" class="btn btn--sm btn--primary btn--flat" data-soon="Le détail des cours sera disponible prochainement.">Voir le détail<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
-          </div>
-        </div>
-      </article>
-      <article class="course">
-        <div class="course__media media">
-          <div class="img-slot"><span>Visuel du cours</span></div>
-          <span class="course__level">Niveau · à préciser</span>
-        </div>
-        <div class="course__body">
-          <h3>Titre du cours à renseigner</h3>
-          <p>Résumé court du cours : objectifs et contenu principal.</p>
-          <div><span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Durée : à préciser</span></div>
-          <div class="course__foot">
-            <div class="course__price"><small>Prix</small><strong>— €</strong></div>
-            <button type="button" class="btn btn--sm btn--primary btn--flat" data-soon="Le détail des cours sera disponible prochainement.">Voir le détail<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
-          </div>
-        </div>
-      </article>
-      <article class="course">
-        <div class="course__media media">
-          <div class="img-slot"><span>Visuel du cours</span></div>
-          <span class="course__level">Niveau · à préciser</span>
-        </div>
-        <div class="course__body">
-          <h3>Titre du cours à renseigner</h3>
-          <p>Résumé court du cours : objectifs et contenu principal.</p>
-          <div><span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Durée : à préciser</span></div>
-          <div class="course__foot">
-            <div class="course__price"><small>Prix</small><strong>— €</strong></div>
-            <button type="button" class="btn btn--sm btn--primary btn--flat" data-soon="Le détail des cours sera disponible prochainement.">Voir le détail<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
-          </div>
-        </div>
-      </article>
-    </div>
-    <p class="note-pill marker">Emplacements de cours : contenus à renseigner depuis le catalogue réel.</p>
-  </div>
-</section>
-
-<!-- Pourquoi nous -->
-<section class="section">
-  <div class="container stack">
-    <div class="head">
-      <span class="eyebrow">Pourquoi nous choisir</span>
-      <h2 class="h2">Pensée pour vous faire avancer, simplement.</h2>
-    </div>
-    <div class="grid why">
-      <div class="feature feature--dark">
-        <div class="blob" style="right:-80px;bottom:-80px;width:240px;height:240px;background:radial-gradient(circle,rgba(31,169,230,.55),rgba(31,169,230,0) 70%)"></div>
-        <span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span>
-        <h3>Accès simplifié</h3>
-        <p>Tous les cours réunis sur une seule plateforme, sur ordinateur comme sur smartphone.</p>
-      </div>
-      <div class="feature">
-        <span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>
-        <h3>Progression pédagogique</h3>
-        <p>Des leçons organisées pour avancer étape par étape.</p>
-      </div>
-      <div class="feature feature--grad">
-        <span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6l-5 3.6 1.9-5.8L4 8.8h6.1z"/></svg></span>
-        <h3>Expérience claire</h3>
-        <p>Une interface épurée pour se concentrer sur l'essentiel : apprendre.</p>
-      </div>
-      <div class="feature">
-        <span class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <h3>Suivi de progression</h3>
-        <p>Retrouvez à tout moment les leçons terminées et celles à venir.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Comment ça marche -->
-<section class="section--wide">
-  <div class="dark-block">
-    <div class="blob" style="top:-200px;left:30%;width:640px;height:640px;background:radial-gradient(circle,rgba(29,99,196,.5),rgba(29,99,196,0) 65%)"></div>
-    <div class="rel" style="display:flex;flex-direction:column;gap:48px">
-      <div class="head" style="max-width:640px">
-        <span class="eyebrow eyebrow--light">Comment ça marche ?</span>
-        <h2 class="h2">Cinq étapes pour commencer.</h2>
-      </div>
-      <ol class="steps">
-        <li><span class="step-n">1</span><h3>Découvrir les cours</h3><p>Parcourez le catalogue et comparez les formations.</p></li>
-        <li><span class="step-n">2</span><h3>Créer un compte</h3><p>Inscrivez-vous en quelques informations.</p></li>
-        <li><span class="step-n">3</span><h3>Choisir une formation</h3><p>Sélectionnez le cours adapté à vos objectifs.</p></li>
-        <li><span class="step-n">4</span><h3>Effectuer le paiement</h3><p>Uniquement lorsque le cours est payant.</p></li>
-        <li><span class="step-n">5</span><h3>Apprendre et progresser</h3><p>Accédez aux leçons et suivez votre progression.</p></li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- Confiance -->
-<section class="section">
-  <div class="container stack">
-    <div class="head">
-      <span class="eyebrow">En toute transparence</span>
-      <h2 class="h2">Qui se trouve derrière la plateforme.</h2>
-    </div>
-    <div class="grid trust">
-      <div class="card">
-        <span class="label">Organisation</span>
-        <p class="big">Corps for Progress</p>
-        <p>Statut juridique, siège et informations d'enregistrement à renseigner.</p>
-      </div>
-      <div class="card">
-        <span class="label">Nous contacter</span>
-        <p>Adresse e-mail, téléphone et adresse officiels à fournir.</p>
-        <a href="#contact" class="btn btn--sm btn--soft self-start mt-auto">Voir les coordonnées</a>
-      </div>
-      <div class="card card--tint">
-        <span class="icon-sm"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-        <span class="label">Témoignages</span>
-        <p>Emplacement réservé aux témoignages authentiques d'apprenants, publiés avec leur accord.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Appel final -->
-<section class="section--cta">
-  <div class="cta">
-    <div class="ring" style="right:-120px;top:-120px;width:420px;height:420px;border-width:60px"></div>
-    <h2 class="h2 h2--cta rel">Votre prochaine étape commence en anglais.</h2>
-    <div class="rel col" style="gap:24px">
-      <p>Parcourez les formations disponibles et créez votre compte quand vous êtes prêt.</p>
-      <div class="btn-row">
-        <a href="#cours" class="btn btn--lg btn--white">Découvrir nos cours<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        <button type="button" class="btn btn--lg btn--glass" data-soon="La création de compte sera disponible prochainement.">Créer un compte</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer id="contact" class="footer">
-  <div class="footer__grid">
-    <div class="footer__col footer__col--brand">
-      <div class="footer__logo"><img src="assets/cp-logo.jpeg" alt="Corps for Progress"></div>
-      <p style="max-width:24em">Corps for Progress — plateforme de formation en anglais.</p>
-    </div>
-    <nav class="footer__col" aria-label="Navigation du pied de page">
-      <span class="footer__title">Navigation</span>
-      <a href="index.html">Accueil</a>
-      <a href="a-propos.html">À propos de nous</a>
-      <a href="index.html#cours">Nos cours</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="footer__col">
-      <span class="footer__title">Contact</span>
-      <p>E-mail, téléphone et adresse officiels à venir.</p>
-    </div>
-    <div class="footer__col">
-      <span class="footer__title">Informations légales</span>
-      <p class="white">Politique de confidentialité</p>
-      <p class="white">Conditions d'utilisation</p>
-      <p class="small">Pages disponibles prochainement.</p>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <span>© <span data-year>2026</span> Corps for Progress</span>
-    <span>Apprenez l'anglais. Élargissez vos horizons.</span>
-  </div>
-</footer>
-
 </div>
-<script src="js/main.js"></script>
+
 </body>
 </html>
